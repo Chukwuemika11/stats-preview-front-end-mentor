@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Overpass', sans-serif;
+}
+
+header{
+    padding: 30px 80px;
+}
+
+#main-container{
+    background-color: hsla(230, 56%, 11%, 0.961);
+    width: 900px;
+    height: 420px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    margin: 60px auto;
+    /* justify-content: space-between; */
+}
+
+.first-container{
+    width: 350px;
+    height: 420px;
+    padding: 50px;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.second-container{
+    width: 350px;
+    height: 420px;
+}
+
+.h1-text{
+    margin-bottom: 20px;
+    color:hsl(0, 0%, 100%) ;
+}
+
+.title-p{
+  margin-bottom: 70px;
+  color:hsla(0, 0%, 100%, 0.75);
+}
+/* .title{
+padding: ;} */
+
+
+.img{
+    width: 450px;
+    height:420px;
+    margin-left:100px;
+    border-radius: 12px;
+    border-top-left-radius:0px ;
+    border-bottom-left-radius: 0px;
+    /* display: inline-block; */
+}
+
+.bottom-section{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 30px;
+}
+
+.bottom-section , h3{
+  color: hsl(0, 0%, 100%);
+}
+
+.bottom-section , p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+span{
+    color:hsl(277, 64%, 61%) ;
+}
+
+
+@media (max-width: 477px){
+    header{
+        max-width: 375px; /* Set a maximum width for screens wider than 375px */
+        padding: 0px;   
+     }
+
+    #main-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border-radius: 12px;
+        margin: 0px auto;
+        flex-direction: column;
+        text-align: center;
+        /* justify-content: space-between; */
+    }
+
+    .first-container{
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        order: 2;
+        /* color: black; */
+        /* align-items: center;
+        justify-content: center; */
+    }
+    
+    .second-container{
+        width: 100%;
+        height: 100%;
+        order: 1;
+    }
+
+    .img{
+        margin-left: 0px;
+        width: 100%;
+        height: 100%;
+        /* border-radius: 10px; */
+        border-bottom-right-radius:0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px ;
+        border-top-left-radius:10px ;
+    }
+    
+    
+    .bottom-section{
+        display: block;
+        /* justify-content: space-around; */
+    gap: 0px;
+    margin-top: -34px;
+}
+
+  .first-bottom,.second-bottom, .third-bottom{
+    margin-bottom: 30px;
+  }
+  
+}
+   
+
+/* - Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6) */
